@@ -2,9 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import connectToDatabase from './src/config/database/dbConnector.js';
 
-const confidential = dotenv();
-
-confidential.config();
+dotenv.config();
 
 connectToDatabase();
 
